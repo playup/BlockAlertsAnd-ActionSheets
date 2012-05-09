@@ -322,7 +322,7 @@ static UIFont *buttonFont = nil;
                                                   _view.frame = frame;
                                                   [[BlockBackground sharedInstance] reduceAlphaIfEmpty];
                                               } 
-                                              completion:^(BOOL finished) {
+                                              completion:^(BOOL completed) {
                                                   [[BlockBackground sharedInstance] removeView:_view];
                                                   [_view release]; _view = nil;
                                                   [self autorelease];
